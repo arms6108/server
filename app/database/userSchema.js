@@ -1,5 +1,4 @@
 var mongoose = require('mongoose');
-
 var categorySchema = mongoose.Schema({
     id:{type:Number},
     name: {type: String},
@@ -17,6 +16,6 @@ var businessSchema=mongoose.Schema({
     email:{type:String},
     location:{type:String}
 });
-var Business=mongoose.model('business',businessSchema,'business');
+var Business=mongoose.model('Business',businessSchema,'Business');
 
 exports.Business=Business;
